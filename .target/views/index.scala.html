@@ -7,8 +7,7 @@
     		<h2>Tasks over all projects</h2>
     	</hgroup>
     </Header>
-    
-    <articale class="tasks">
+    <article class="tasks">    
     	@todoTasks.groupBy(_.project).map {
             case (project, tasks) => {
                 <div class="folder" data-folder-id="@project.id">
